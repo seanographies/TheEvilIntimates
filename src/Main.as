@@ -3,8 +3,7 @@ package
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import net.flashpunk.Engine;
-	import net.flashpunk.FP;
-	
+	import net.flashpunk.FP;	
 	/**
 	 * ...
 	 * @author sean singh
@@ -20,7 +19,7 @@ package
 		override public function init():void 
 		{
 			super.init();
-			FP.console.enable();
+			//FP.console.enable();
 			FP.world = new Gameworld(GA.SCHEMAONE_LEVEL);
 		}
 		
