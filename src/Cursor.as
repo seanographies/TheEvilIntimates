@@ -17,7 +17,7 @@ package
 		public function Cursor() 
 		{
 			Mouse.hide();
-			setHitbox(32, 32, 16, 16);
+			setHitbox(16,16,8,8);
 			type = "cursor";
 			
 			super(Input.mouseX, Input.mouseY);

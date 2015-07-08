@@ -21,7 +21,7 @@ package
 		{
 			super.init();
 			FP.console.enable();
-			FP.world = new Gameworld;
+			FP.world = new Gameworld(GA.SCHEMAONE_LEVEL);
 		}
 		
 		

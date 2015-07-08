@@ -6,7 +6,7 @@ package
 	import net.flashpunk.graphics.Image;
 	import net.flashpunk.graphics.Spritemap;
 	import net.flashpunk.Mask;
-	
+	import GA;
 	/**
 	 * ...
 	 * @author sean singh
@@ -20,6 +20,7 @@ package
 		{
 			addSprites();
 			graphic = gList;
+			layer = 1;
 		}
 		
 		override public function update():void 

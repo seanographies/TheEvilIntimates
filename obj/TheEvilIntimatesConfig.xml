@@ -16,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'7/7/2015'</value>
+      <value>'8/7/2015'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -37,7 +37,7 @@
     </source-path>
   </compiler>
   <file-specs>
-    <path-element>D:\Game Dev\Flash Dev\Projects\EvilIntimates\TheEvilIntimates\src - Copy\Main.as</path-element>
+    <path-element>D:\Game Dev\Flash Dev\Projects\EvilIntimates\TheEvilIntimates\src\Main.as</path-element>
   </file-specs>
   <default-background-color>#FFFFFF</default-background-color>
   <default-frame-rate>30</default-frame-rate>

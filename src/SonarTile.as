@@ -1,4 +1,4 @@
-package - Copy.schemaone 
+package 
 {
 	import net.flashpunk.Entity;
 	import net.flashpunk.Graphic;
@@ -13,15 +13,20 @@ package - Copy.schemaone
 	{
 		private var _image:Image = new Image(GA.CURSOR_IMAGE);
 		
-		public function SonarTile(x:Number=0, y:Number=0) 
+		public function SonarTile(_x:Number=0, _y:Number=0) 
 		{
 			_image.centerOO();
-			setHitbox(32, 32, 16, 16);
+			setHitbox(16,16,8,8);
+			type = "sonar";
+			
+			super(_x, _y);
+			layer = 0;
 		}
 		
 		override public function update():void 
 		{
 			super.update();
+			collideCursor();
 		}
 		
 		private function collideCursor():void {
