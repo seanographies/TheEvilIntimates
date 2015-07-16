@@ -5,6 +5,7 @@ package
 	import net.flashpunk.masks.Grid;
 	import net.flashpunk.World;
 	import net.flashpunk.FP;
+	import s1.obj;
 	
 	/**
 	 * ...
@@ -28,8 +29,9 @@ package
 		override public function begin():void 
 		{
 			super.begin();
-			add(new SchemaOne);
 			add(new Cursor);
+			add(new SchemaOne);
+			add(new obj);
 		}
 		
 		private function loadmap(mapData:Class):void {

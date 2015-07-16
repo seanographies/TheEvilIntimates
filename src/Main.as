@@ -19,7 +19,8 @@ package
 		override public function init():void 
 		{
 			super.init();
-			//FP.console.enable();
+			FP.screen.color = 0x021724
+			FP.console.enable();
 			FP.world = new Gameworld(GA.SCHEMAONE_LEVEL);
 		}
 		
