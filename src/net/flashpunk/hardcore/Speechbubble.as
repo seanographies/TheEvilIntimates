@@ -1,4 +1,4 @@
-package  
+package  net.flashpunk.hardcore
 {
 	import net.flashpunk.Entity;
 	import net.flashpunk.Graphic;

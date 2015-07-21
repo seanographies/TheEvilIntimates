@@ -16,9 +16,13 @@ package
 		[Embed(source = "../assets/obj_2.fw.png")] public static const OBJ_2:Class;
 		[Embed(source = "../assets/obj_3.fw.png")] public static const OBJ_3:Class;
 		[Embed(source = "../assets/obj_4.fw.png")] public static const OBJ_4:Class;
+		[Embed(source="../assets/cursor_cover128.fw.png")] public static const CURSOR_COVER:Class;
+		[Embed(source = "../assets/cursor_cover64.fw.png")] public static const CURSOR_COVER64:Class;
+		[Embed(source = "../assets/cursor_cover32.fw.png")] public static const CURSOR_COVER32:Class;
+		[Embed(source = "../assets/cursor_cover16.fw.png")] public static const CURSOR_COVER16:Class;
 		//Levels
 		[Embed(source = "../levels/SchemaOne.oel", mimeType = "application/octet-stream")] public static const SCHEMAONE_LEVEL:Class;
-		
+		[Embed(source = "../levels/Titlescreen.oel", mimeType = "application/octet-stream")] public static const TITLESCREEN_LEVEL:Class;
 	}
 
 }

@@ -84,7 +84,7 @@ package
 		
 		private function handleCursor():void {
 			if (collide("cursor", x, y) && !clicked) {
-				graphic = _image;
+				//graphic = _image;
 			}else if (clicked){
 				seeker();
 			}else {

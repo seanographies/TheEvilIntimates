@@ -63,9 +63,13 @@ package s1
 		//Following Moan.as in Ludumdare31
 		protected function spawn():void {
 			if (_spawn) {
-				_column = Math.floor(Math.random() * RangeX) + low;
-				_row = Math.floor(Math.random() * RangeY) + low;
-				
+				if (GC.SCENETICKET == 2) {
+					_column = 12;
+					_row = 2;
+				}else {
+					_column = Math.floor(Math.random() * RangeX) + low;
+					_row = Math.floor(Math.random() * RangeY) + low;
+				}
 				_grid.setTile(_column,_row);
 				_spawn = false;
 				

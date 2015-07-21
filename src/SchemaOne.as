@@ -16,6 +16,7 @@ package
 		private var gList:Graphiclist = new Graphiclist();
 		private var _bgsprites:Spritemap = new Spritemap(GA.SONAR_BG_SPRITESHEET, 800, 600);
 		private var curAnimation:String = "default";
+		private var gm:GameManager = new GameManager;
 		
 		public function SchemaOne() 
 		{
@@ -48,28 +49,31 @@ package
 		private function handleReturn():void {
 			if (collide("cursor", x, y) && Input.mouseReleased) {
 				trace("RETURN HOME");
+				GC.SCENETICKET = 1;
+				gm.changeScene();
 			}
 		}
 		
+		//Binoculars change to the cursor position
 		private function handleSprites():void {
 			//y axis
 			if (Input.mouseX >= 250 && Input.mouseX <= 500 && Input.mouseY >= 461) {
 				curAnimation = "midLow";
-				trace("midLow");
+				//trace("midLow");
 			}
 			
 			//x axis
 			if (Input.mouseX >= 250 && Input.mouseX <= 500 && Input.mouseY <= 460) {
 				curAnimation = "mid";
-				trace("mid");
+				//trace("mid");
 			}
 			if (Input.mouseX <= 249&& Input.mouseY <= 450) {
 				curAnimation = "left";
-				trace("left");
+				//trace("left");
 			}			
 			if (Input.mouseX >= 501&& Input.mouseY <= 460) {
 				curAnimation = "right";
-				trace("right");
+				//trace("right");
 			}
 			
 			_bgsprites.play(curAnimation);
