@@ -8,6 +8,10 @@ package
 	import net.flashpunk.FP;
 	import s1.obj;
 	import net.flashpunk.hardcore.Speechbubble;
+	import scene1.Godfather;
+	import scene1.MotherLeopard;
+	import scene1.Oedipus;
+	import scene3.Voyeur;
 	
 	/**
 	 * ...
@@ -55,6 +59,24 @@ package
 			
 			for each(node in mapXML.Entities.Titlescreen) {
 				add(new TitleScreen);
+			}
+			
+			for each(node in mapXML.Entities.Godfather) {
+				add(new Godfather(Number(node.@x), Number(node.@y)));
+				add(new Speechbubble);
+			}
+			
+			for each(node in mapXML.Entities.Oedipus) {
+				add(new Oedipus(Number(node.@x), Number(node.@y)));
+			}			
+			
+			for each(node in mapXML.Entities.MotherLeopard) {
+				add(new MotherLeopard(Number(node.@x), Number(node.@y)));
+			}			
+			
+			for each(node in mapXML.Entities.Voyeur) {
+				add(new Voyeur);
+				add(new Speechbubble);
 			}
 			
 			

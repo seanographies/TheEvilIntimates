@@ -7,6 +7,8 @@ package
 	import net.flashpunk.graphics.Graphiclist;
 	import net.flashpunk.graphics.Image;
 	import net.flashpunk.graphics.Spritemap;
+	import net.flashpunk.graphics.Spritemap;
+	import net.flashpunk.FP;
 	/**
 	 * ...
 	 * @author sean singh
@@ -49,7 +51,9 @@ package
 		private function handleReturn():void {
 			if (collide("cursor", x, y) && Input.mouseReleased) {
 				trace("RETURN HOME");
-				GC.SCENETICKET = 1;
+				GC.SCENETICKET = 3;
+				GC.SEEKER = 5;
+				FP.world.removeAll();
 				gm.changeScene();
 			}
 		}

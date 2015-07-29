@@ -17,6 +17,9 @@ package
 		//Level Number
 		public static var SCENETICKET:Number = 0;
 		
+		//Evil Intimates scale
+		public static var EI_SCALE:Number = 3;
+		
 	}
 
 }

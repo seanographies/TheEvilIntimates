@@ -6,6 +6,15 @@ package
 	 */
 	public class GA 
 	{
+		//Title Screen
+		[Embed(source = "../assets/TITLE_SCREEN.fw.png")] public static const TITLE_SCREEN_BG:Class;
+		[Embed(source = "../assets/EVIL_INTIMATE.fw.png")] public static const EVIL_INTIMATE:Class;
+		[Embed(source = "../assets/sfx/titlescreen.mp3")] public static const TITLESCREEN_SFX:Class;
+		//Scene 1
+		[Embed(source = "../assets/EI_Spritesheet.fw.png")] public static const EI_SPRITESHEET:Class;
+		[Embed(source = "../assets/sfx/ringnew_01.mp3")] public static const RING_SFX:Class;
+		//Scene 4
+		[Embed(source = "../assets/voyeur_bg_spritesheet.png")] public static const VOYEUR_BG_SPRITESHEET:Class;
 		//SONAR, Schema #1
 		[Embed(source = "../assets/sonar_bg_spritesheet.fw.png")] public static const SONAR_BG_SPRITESHEET:Class;
 		[Embed(source = "../assets/sonar_sprites.fw.png")] public static const SONAR_SPRITESHEET:Class;
@@ -23,6 +32,8 @@ package
 		//Levels
 		[Embed(source = "../levels/SchemaOne.oel", mimeType = "application/octet-stream")] public static const SCHEMAONE_LEVEL:Class;
 		[Embed(source = "../levels/Titlescreen.oel", mimeType = "application/octet-stream")] public static const TITLESCREEN_LEVEL:Class;
+		[Embed(source = "../levels/Lounge.oel", mimeType = "application/octet-stream")] public static const LOUNGE_LEVEL:Class;
+		[Embed(source = "../levels/Voyeur.oel", mimeType = "application/octet-stream")] public static const VOYEUR_LEVEL:Class;
 	}
 
 }
