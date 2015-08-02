@@ -15,6 +15,7 @@ package
 		[Embed(source = "../assets/sfx/ringnew_01.mp3")] public static const RING_SFX:Class;
 		//Scene 4
 		[Embed(source = "../assets/voyeur_bg_spritesheet.png")] public static const VOYEUR_BG_SPRITESHEET:Class;
+		[Embed(source = "../assets/sfx/kepler.mp3")] public static const VOYEUR_MUSIC:Class;
 		//SONAR, Schema #1
 		[Embed(source = "../assets/sonar_bg_spritesheet.fw.png")] public static const SONAR_BG_SPRITESHEET:Class;
 		[Embed(source = "../assets/sonar_sprites.fw.png")] public static const SONAR_SPRITESHEET:Class;

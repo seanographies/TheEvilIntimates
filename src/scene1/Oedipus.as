@@ -38,7 +38,7 @@ package scene1
 		
 		//display graphic once connected and null when not
 		private function handleGraphic():void {
-			if (Speechbubble.LINE_NUMBER >= 3 && Speechbubble.LINE_NUMBER < 39) {
+			if (Speechbubble.LINE_NUMBER >= 3 && Speechbubble.LINE_NUMBER < 32) {
 				graphic = _spritesheet;
 			}else {
 				graphic = null;

@@ -3,6 +3,7 @@ package scene1
 	import net.flashpunk.Entity;
 	import net.flashpunk.Graphic;
 	import net.flashpunk.Mask;
+	import net.flashpunk.Sfx;
 	
 	/**
 	 * ...
@@ -10,7 +11,6 @@ package scene1
 	 */
 	public class Lounge extends Entity 
 	{
-		
 		public function Lounge() 
 		{
 			
@@ -19,6 +19,7 @@ package scene1
 		override public function update():void 
 		{
 			super.update();
+			
 		}
 		
 	}

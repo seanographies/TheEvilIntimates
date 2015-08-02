@@ -15,12 +15,12 @@ package scene1
 	{
 		private  var _spritesheet:Spritemap = new Spritemap(GA.EI_SPRITESHEET, 128, 128);
 		private var curAnimation:String = "off";
-		
+		private var _music:Sfx = new Sfx(GA.VOYEUR_MUSIC);
 		public function Godfather(x:Number=0, y:Number=0) 
 		{
 			addSprites();
 			super(x, y);
-			
+			_music.loop();
 		}
 		
 		private function addSprites():void {
@@ -40,10 +40,14 @@ package scene1
 		
 		//display graphic once connected and null when not
 		private function handleGraphic():void {
-			if (Speechbubble.LINE_NUMBER >= 2 && Speechbubble.LINE_NUMBER < 47) {
+			if (Speechbubble.LINE_NUMBER >= 2 && Speechbubble.LINE_NUMBER < 45) {
 				graphic = _spritesheet;
 			}else {
 				graphic = null;
+			}
+			
+			if (Speechbubble.LINE_NUMBER >= 45) {
+				_music.stop();
 			}
 		}
 		

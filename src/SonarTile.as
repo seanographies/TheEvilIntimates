@@ -33,7 +33,7 @@ package
 			addSprites();
 			
 			super(_x, _y);
-			layer = 2;
+			layer = GC.SONARTILE;
 		}
 		
 		override public function update():void 

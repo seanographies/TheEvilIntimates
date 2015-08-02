@@ -43,7 +43,7 @@ package
 				case 4:
 					trace ("Scene 4 - Voyeur Dialog");
 					FP.world.removeAll();
-					FP.world = new Gameworld(GA.VOYEUR_LEVEL);
+					FP.world = new Gameworld(GA.VOYEUR_LEVEL);				
 			}
 			
 		}

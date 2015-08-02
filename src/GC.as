@@ -7,8 +7,10 @@ package
 	public class GC 
 	{
 		// layers
-		public static const FOREGROUND:Number = 0;
-		public static const UNDERFOREGROUND:Number = 1;
+		public static const FADE:Number = 0;
+		public static const FOREGROUND:Number = 1;
+		public static const UNDERFOREGROUND:Number = 2;
+		public static const SONARTILE:Number = 3;
 		public static const BACKGROUND:Number = 6;
 		
 		//Number of Seekers

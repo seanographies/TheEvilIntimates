@@ -19,7 +19,7 @@ package
 		override public function init():void 
 		{
 			super.init();
-			FP.screen.color = 0x021724
+			FP.screen.color = 0x021724;
 			//FP.console.enable();
 			FP.world = new Gameworld(GA.TITLESCREEN_LEVEL);
 		}

@@ -68,7 +68,7 @@ package s1
 					_row = 2;
 				}else {
 					_column = Math.floor(Math.random() * RangeX) + low;
-					_row = Math.floor(Math.random() * RangeY) + low;
+					_row = Math.floor(Math.random() * RangeY) + 1;
 				}
 				_grid.setTile(_column,_row);
 				_spawn = false;

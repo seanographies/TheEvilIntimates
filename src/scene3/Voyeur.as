@@ -14,21 +14,22 @@ package scene3
 	public class Voyeur extends Entity 
 	{
 		private var _spritemap:Spritemap = new Spritemap(GA.VOYEUR_BG_SPRITESHEET, 800, 600);
-		private var _currentLine:Number;
+		private var _currentAct:Number;
 		private var gm:GameManager = new GameManager;
 		public function Voyeur() 
 		{
-			_currentLine = new Number(Speechbubble.LINE_NUMBER);
-			trace("Current line is" + _currentLine);
+			_currentAct = new Number(Speechbubble.ACT_NUMBER);
+			trace("Current act is" + _currentAct);
 			addSprites();
 			super(x, y, graphic);
+			layer = GC.FOREGROUND;
 		}
 		
 		override public function update():void 
 		{
 			super.update();
 			updateLines();
-			trace("LIVE LINE IS" + Speechbubble.LINE_NUMBER);
+			trace("LIVE ACT IS" + Speechbubble.ACT_NUMBER);
 		}
 		
 		private function addSprites():void {
@@ -37,8 +38,9 @@ package scene3
 			graphic = _spritemap;
 		}
 		
+		//If act does not equal the previous act return to Seeker scene
 		private function updateLines():void {
-			if (Speechbubble.LINE_NUMBER !==_currentLine) {
+			if (Speechbubble.ACT_NUMBER !== _currentAct) {
 				trace("GO BACK");
 				GC.SCENETICKET = 3;
 				gm.changeScene();
